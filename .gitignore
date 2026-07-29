@@ -1,0 +1,7 @@
+# Private source data — never publish
+论文总结.xlsx
+*.xlsx
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
