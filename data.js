@@ -26,7 +26,7 @@ const PUBLICATIONS = [
   {
     year: 2026,
     title: "Beyond Pairwise User Transfer: Multimodal Group-Level Relational Preference Modeling for Cross-Domain Recommendation",
-    authors: "Xiaohan Fang, Chaozhuo Li, Yi Zhao†, et al.",
+    authors: "Jibing Gong, Jinye Zhao, Yi Zhao†, et al.",
     venue: "Expert Systems With Applications",
     tags: [], first: false, corr: true, ccfa: false
   },
