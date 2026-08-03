@@ -4,104 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yi Zhao (赵祎) — Homepage</title>
-<meta name="description" content="Yi Zhao (赵祎) — researcher in recommendation systems, cross-domain recommendation, knowledge graphs, graph neural networks, and large language models.">
+<meta name="description" content="Yi Zhao (赵祎) — Ph.D. candidate at Tsinghua KEG, researching recommendation systems, cross-domain recommendation, knowledge graphs, graph neural networks, and large language models.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2338507e'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23fbfaf7' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<button id="themeBtn" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">Dark</button>
 
-<nav class="rail" aria-hidden="true">
-  <a href="#top" class="active"><b>00</b> HOME</a>
-  <a href="#publications"><b>01</b> WORK</a>
-  <a href="#awards"><b>02</b> AWARDS</a>
-</nav>
-
-<div class="theme-toggle">
-  <button id="themeBtn" aria-label="Toggle dark mode" title="Toggle theme">☾</button>
-</div>
-
-<header class="hero" id="top">
-  <div class="wrap hero-text">
-      <div class="eyebrow scramble">赵祎 / KEG · TSINGHUA UNIVERSITY</div>
-      <h1 class="scramble">Yi&nbsp;Zhao</h1>
-      <svg class="uline" viewBox="0 0 440 14" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M3 9 C 70 3, 150 3, 220 7 S 370 12, 437 5" />
-      </svg>
-      <p class="role">Ph.D. Candidate · Recommendation Systems &amp; Graph Learning</p>
-      <p class="intro">
-        I am a Ph.D. candidate and a member of the Knowledge Engineering Group (KEG), Department of
-        Computer Science and Technology, Tsinghua University, where I am fortunate to work with
-        Prof. Jie Tang. I am advised by Prof. Jibing Gong at Yanshan University. My research
-        interests lie in <em>recommendation systems</em>, <em>cross-domain recommendation</em>,
-        <em>knowledge graphs</em>, and <em>graph neural networks</em>, together with their
-        intersection with <em>large language &amp; vision-language models</em>. Currently, I focus
-        on transferring knowledge across domains and building recommender systems that reason over
-        structured knowledge with the help of large models. If these directions align with your
-        interests, feel free to reach out by email — I am always happy to discuss ideas and explore
-        collaborations.
-      </p>
-      <nav class="links">
-        <a href="mailto:zhaoyi.hb@gmail.com"><span>✉</span> Email</a>
-        <a href="https://scholar.google.co.jp/citations?user=7Asw0ZkAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener"><span>◆</span> Google Scholar</a>
-      </nav>
-  </div>
-  <div class="scroll-hint" aria-hidden="true">SCROLL</div>
-</header>
-
-<main class="wrap">
-  <section id="publications">
-    <div class="sec-head" data-reveal>
-      <span class="sec-num">[ 01 ]</span>
-      <h2>Publications</h2>
-      <span class="sec-rule"></span>
-      <span class="sec-plus">+</span>
+<div class="page">
+  <header class="masthead" id="top">
+    <div class="name-block">
+      <h1>Yi Zhao <span class="cn">赵祎</span></h1>
+      <p class="affil">Ph.D. Candidate · Knowledge Engineering Group (KEG), Tsinghua University</p>
     </div>
-    <div class="pub-controls" data-reveal>
-      <div class="filters" id="filters">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="first">First author</button>
+    <p class="intro">
+      I am a Ph.D. candidate and a member of the Knowledge Engineering Group (KEG), Department of
+      Computer Science and Technology, Tsinghua University, where I am fortunate to work with
+      Prof. Jie Tang. I am advised by Prof. Jibing Gong at Yanshan University. My research
+      interests lie in <em>recommendation systems</em>, <em>cross-domain recommendation</em>,
+      <em>knowledge graphs</em>, and <em>graph neural networks</em>, together with their
+      intersection with <em>large language and vision–language models</em>. Currently, I focus
+      on transferring knowledge across domains and building recommender systems that reason over
+      structured knowledge with the help of large models. If these directions align with your
+      interests, feel free to reach out — I am always happy to discuss ideas and explore
+      collaborations.
+    </p>
+    <nav class="contact">
+      <a href="mailto:zhaoyi.hb@gmail.com">zhaoyi.hb@gmail.com</a>
+      <span class="sep">·</span>
+      <a href="https://scholar.google.co.jp/citations?user=7Asw0ZkAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="publications">
+      <div class="sec-head" data-reveal>
+        <h2>Publications</h2>
+        <div class="filters" id="filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="first">First author</button>
+          <button data-filter="ccfa">CCF-A</button>
+        </div>
       </div>
-      <p class="note">
-        <span class="mark first">★</span> first / co-first &nbsp;
-        <span class="mark corr">†</span> corresponding
+      <p class="note" data-reveal>
+        <span class="mark first">★</span> first / co-first author &nbsp;·&nbsp;
+        <span class="mark corr">†</span> corresponding author
       </p>
-    </div>
-    <ol class="pub-list" id="pubList"></ol>
-  </section>
+      <ol class="pub-list" id="pubList"></ol>
+    </section>
 
-  <section id="awards">
-    <div class="sec-head" data-reveal>
-      <span class="sec-num">[ 02 ]</span>
-      <h2>Awards</h2>
-      <span class="sec-rule"></span>
-      <span class="sec-plus">+</span>
-    </div>
-    <ul class="award-list">
-      <li data-reveal>
-        <span class="award-year">2023</span>
-        <div>
-          <strong>National Scholarship</strong>
-          <span class="award-meta">Ministry of Education of China</span>
-        </div>
-      </li>
-      <li data-reveal>
-        <span class="award-year">—</span>
-        <div>
-          <strong>Hebei Provincial Science &amp; Technology Progress Award · Second Prize</strong>
-          <span class="award-meta">“Key Technologies for Knowledge Graph Mining and Intelligent Knowledge Services and Their Industrial Applications”</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-</main>
+    <section id="awards">
+      <div class="sec-head" data-reveal>
+        <h2>Awards &amp; Honors</h2>
+      </div>
+      <ul class="award-list">
+        <li data-reveal>
+          <span class="award-year">2023</span>
+          <div>
+            <strong>National Scholarship</strong>
+            <span class="award-meta">Ministry of Education of China</span>
+          </div>
+        </li>
+        <li data-reveal>
+          <span class="award-year">—</span>
+          <div>
+            <strong>Hebei Provincial Science &amp; Technology Progress Award, Second Prize</strong>
+            <span class="award-meta">“Key Technologies for Knowledge Graph Mining and Intelligent Knowledge Services and Their Industrial Applications”</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-<footer class="wrap">
-  <span>© <span id="year"></span> Yi Zhao · 赵祎</span>
-  <span class="mono">Built for GitHub Pages</span>
-</footer>
+  <footer>
+    <span>© <span id="year"></span> Yi Zhao · 赵祎</span>
+    <span>Tsinghua University · KEG</span>
+  </footer>
+</div>
 
 <script src="data.js"></script>
 <script src="main.js"></script>
